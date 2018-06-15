@@ -25,35 +25,4 @@ public class Car {
         return String.format("%s %.2f %d", this.model, this.fuel, this.distanceTraveled);
     }
 
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
-    }
-
-    public double getFuel() {
-        return fuel;
-    }
-
-    public void setFuel(double fuel) {
-        this.fuel = fuel;
-    }
-
-    public double getFuelCostPerKm() {
-        return fuelCostPerKm;
-    }
-
-    public void setFuelCostPerKm(double fuelCostPerKm) {
-        this.fuelCostPerKm = fuelCostPerKm;
-    }
-
-    public int getDistanceTraveled() {
-        return distanceTraveled;
-    }
-
-    public void setDistanceTraveled(int distanceTraveled) {
-        this.distanceTraveled = distanceTraveled;
-    }
 }

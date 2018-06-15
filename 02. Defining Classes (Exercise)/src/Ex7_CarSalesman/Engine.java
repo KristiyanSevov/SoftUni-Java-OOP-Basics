@@ -34,35 +34,4 @@ public class Engine {
                 this.efficiency == null ? "n/a" : this.efficiency);
     }
 
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
-    }
-
-    public int getPower() {
-        return power;
-    }
-
-    public void setPower(int power) {
-        this.power = power;
-    }
-
-    public Integer getDisplacement() {
-        return displacement;
-    }
-
-    public void setDisplacement(Integer displacement) {
-        this.displacement = displacement;
-    }
-
-    public String getEfficiency() {
-        return efficiency;
-    }
-
-    public void setEfficiency(String efficiency) {
-        this.efficiency = efficiency;
-    }
 }

@@ -30,32 +30,16 @@ public class Car {
         return model;
     }
 
-    public void setModel(String model) {
-        this.model = model;
-    }
-
     public Engine getEngine() {
         return engine;
-    }
-
-    public void setEngine(Engine engine) {
-        this.engine = engine;
     }
 
     public Cargo getCargo() {
         return cargo;
     }
 
-    public void setCargo(Cargo cargo) {
-        this.cargo = cargo;
-    }
-
     public Tire[] getTires() {
         return tires;
-    }
-
-    public void setTires(Tire[] tires) {
-        this.tires = tires;
     }
 
     public class Tire {
@@ -71,17 +55,6 @@ public class Car {
             return pressure;
         }
 
-        public void setPressure(double pressure) {
-            this.pressure = pressure;
-        }
-
-        public int getAge() {
-            return age;
-        }
-
-        public void setAge(int age) {
-            this.age = age;
-        }
     }
 
     public class Cargo {
@@ -93,21 +66,10 @@ public class Car {
             this.type = type;
         }
 
-        public int getWeigth() {
-            return weigth;
-        }
-
-        public void setWeigth(int weigth) {
-            this.weigth = weigth;
-        }
-
         public String getType() {
             return type;
         }
 
-        public void setType(String type) {
-            this.type = type;
-        }
     }
 
     public class Engine {
@@ -119,20 +81,9 @@ public class Car {
             this.power = power;
         }
 
-        public int getSpeed() {
-            return speed;
-        }
-
-        public void setSpeed(int speed) {
-            this.speed = speed;
-        }
-
         public int getPower() {
             return power;
         }
 
-        public void setPower(int power) {
-            this.power = power;
-        }
     }
 }

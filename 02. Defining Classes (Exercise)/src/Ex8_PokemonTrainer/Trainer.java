@@ -30,14 +30,6 @@ public class Trainer {
         return String.format("%s %d %d", this.name, this.badgeCount, this.pokemon.size());
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public int getBadgeCount() {
         return badgeCount;
     }
@@ -50,7 +42,4 @@ public class Trainer {
         return pokemon;
     }
 
-    public void setPokemon(List<Pokemon> pokemon) {
-        this.pokemon = pokemon;
-    }
 }
