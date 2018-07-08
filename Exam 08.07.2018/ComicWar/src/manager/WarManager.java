@@ -132,7 +132,7 @@ public class WarManager implements Manager {
 
     @Override
     public String asignSuperPowerToComicCharacter(String comicCharacter, String superPower) {
-        if (assignedPowers.contains(superPower) || !superPowers.containsKey(superPower)) {
+        if (assignedPowers.contains(superPower)) {
             return String.format("%s already asigned!", superPower);
         }
         ComicCharacter character = characters.get(comicCharacter);
