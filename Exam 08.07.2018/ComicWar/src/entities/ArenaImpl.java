@@ -51,12 +51,12 @@ public class ArenaImpl implements Arena {
             for (int i = 0; i < Math.min(heroes.size(), antiHeroes.size()); i++) {
                 if (counter % 2 == 0) {
                     antiHeroes.get(i).takeDamage(heroes.get(i).attack());
-                    antiHeroes = antiHeroes.stream().filter(x -> x.getHealth() > 0).collect(Collectors.toList());
                 } else {
                     heroes.get(i).takeDamage(antiHeroes.get(i).attack());
-                    heroes = heroes.stream().filter(x -> x.getHealth() > 0).collect(Collectors.toList());
                 }
             }
+            antiHeroes = antiHeroes.stream().filter(x -> x.getHealth() > 0).collect(Collectors.toList());
+            heroes = heroes.stream().filter(x -> x.getHealth() > 0).collect(Collectors.toList());
             counter++;
         }
         return antiHeroes.size() == 0;
